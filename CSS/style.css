@@ -49,9 +49,6 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
-.navbar-links a:hover, .logo a:hover {
-	color: rgb(236, 0, 250);
-}
 
 .hamburger {
 	display: none;
@@ -68,9 +65,6 @@ body {
 	border-radius: 10px;
 }
 
-a .bar:hover {
-	background-color: rgb(236, 0, 250);
-}
 
 @media (max-width: 750px) {
 	.hamburger {
