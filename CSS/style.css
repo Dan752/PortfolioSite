@@ -1,5 +1,9 @@
+html {scroll-behavior:smooth}
+
 * {
 	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
 }
 
 body {
@@ -10,21 +14,38 @@ body {
 header {
 	padding: 0 35px;
 	background-color: #3F3FD4;
-	border-bottom: 1px solid rgb(236, 0, 250);
+	border-bottom: 1px solid white; 	/*rgb(236, 241, 250)*/
+	position: absolute;
+	width: 100vw;
 }
+
+
+/*
+.fixed-header {
+	background-color: rgb(236, 241, 250);
+	animation: fixHeader 1s ease;
+	position: fixed;
+	z-index: 11;
+}
+*/
 
 .container {
 	max-width: 1140px;
 	margin: auto;
 }
 
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 .logo a {
 	text-decoration: none;
 	color: white;
-	font-size: 30px;
+	font-size: 40px;
 	font-family: 'Eczar', 'Lobster', cursive, sans-serif;
 	font-weight: 600;
-
+	cursor: default;
 }
 
 .navbar {
@@ -49,13 +70,35 @@ header {
 .navbar-links li a {
 	text-decoration: none;
 	color: white;
-	padding-left: 35px;
+	position: relative;
+	margin: 0 18px 0 18px;
 	display: block;
 	font-family: 'Montserrat', sans-serif;
 }
 
-.navbar-links a:hover, .logo a:hover {
-	color: rgb(236, 0, 250);
+.navbar-links li a::before {
+	display: none;
+	content: "";
+	position: absolute;
+	height: 3px;
+	width: 100%;
+	background: white;
+	left: 0;
+	right: 0;
+	bottom: -150%;
+	transition: all .5s ease;
+	cursor: pointer;
+}
+
+.navbar-links ul li a:hover::before {
+	display: block;
+	width: 100%;
+	left: 0px;
+	transition: all .5s ease;
+}
+
+.navbar-links li a:hover {
+	display: block;
 }
 
 .hamburger {
@@ -77,7 +120,7 @@ a .bar:hover {
 	background-color: rgb(236, 0, 250);
 }
 
-@media (max-width: 750px) {
+@media (max-width: 775px) {
 	.hamburger {
 		display: flex;
 	}
@@ -88,10 +131,10 @@ a .bar:hover {
 
 	header {
 		background-color: rgb(236, 241, 250);
-		border-color: #01143e;
+		border-color: #191970;
 	}
 
-	.logo a {
+	header .logo a {
 		color: #01143e;
 	}
 
@@ -99,3 +142,11 @@ a .bar:hover {
 		background-color: #01143e;
 	}
 }
+
+
+
+
+
+
+
+
