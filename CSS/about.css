@@ -1,0 +1,178 @@
+.about {
+	padding: 60px 15px;
+}
+
+.container {
+	max-width: 1140px;
+	margin: auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.about-title {
+	width: 100%;
+}
+
+.about-title h2 {
+	font-size: 2em;
+	display: inline-block;
+	position: relative;
+	text-transform: uppercase;
+	font-family: 'Eczar', 'Lobster', cursive, sans-serif;
+
+}
+
+.about-title p {
+	font-size: 12px;
+	font-weight: normal;
+	color: gray;
+}
+
+.about-title h2, p {
+	margin: 0;
+	padding-top: 4px;
+}
+
+.about-title h2::before {
+	content: "";
+	position: absolute;
+	background-color: #3F3FD4;
+	left: 0;
+	right: -25%;
+	height: 2px;
+	bottom: 4px;
+}
+
+.img, .about-container {
+	flex: 0 0 50%;
+	max-width: 50%;
+}
+
+.about-img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.about-container {
+	flex-basis: 50%;
+	max-width: 50%;
+}
+
+.about-container h3 {
+	font-size: 35px;
+}
+
+.about-container h4 {
+	font-size: 18px;
+	font-weight: 500;
+	margin: 0;
+}
+
+.about-container span {
+	color: #3F3FD4;
+}
+
+.about-container p {
+	padding-top: 15px;
+	font-weight: 400;
+	line-height: 1.5rem;
+}
+
+.about-container h6 {
+	font-size: 18px;
+	padding-top: 25px;
+	padding-bottom: 0;
+	font-weight: 400;
+}
+
+.about-container p, ul {
+	color: #838383;
+}
+
+.about-list {
+	display: flex;
+	width: 100%;
+}
+
+.ul-center {
+	width: 100%;
+	max-width: 170px;
+	min-width: 170px;
+}
+
+.ul-center li {
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.about-list ul {
+	padding-right: 20px;
+	list-style-type: circle;
+}
+
+.about-list ul li::marker {
+	color: gray;
+}
+
+.social-media {
+	display: flex;
+}
+
+.social-media ul {
+	padding-left: 20;
+}
+
+.social-media ul li {
+	list-style-type: none;
+	display: inline-block;
+}
+
+.fa {
+	color: white;
+	padding: 8px;
+	width: 35px;
+	height: 35px;
+	border: 1px solid #3F3FD4;
+	border-radius: 30%;
+	background-color: #3F3FD4;
+	text-align: center;
+	text-decoration: none;
+	margin: 0 5px 0 0;
+	display: inline-block;
+}
+
+.fa:hover {
+	transition: background .5s ease;
+	background-color: white;
+	color: #3F3FD4;
+}
+
+
+@media (max-width:800px) {
+	.row {
+		flex-direction: column;
+	}
+	.img, .about-container {
+		flex: 0 0 100%;
+		width: 100%;
+		max-width: 80%;
+		margin: auto;
+		margin-top: 30px;
+	}
+
+	.about-container, .social-media, .about-list  {
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+	}
+	.social-media ul {
+		padding-left: 0px;
+	}
+	.about-list {
+		text-align: left;
+	}
+}

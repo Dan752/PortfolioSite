@@ -1,0 +1,192 @@
+.contact {
+	padding: 60px 15px;
+	background: rgb(236, 241, 250)
+}
+
+.contact h1 {
+	font-size: 2em;
+	margin-top: 0;
+	text-transform: uppercase;
+	font-family: 'Eczar', 'Lobster', cursive, sans-serif;
+}
+
+
+.form-body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 15px;
+	padding-bottom: 100px;
+	border-radius: 50px;
+}
+
+
+.form-container{
+	width: 100%;
+	max-width: 800px;
+	background-color: white;
+	padding: 15px 30px;
+	border-radius: 10px;
+}
+
+.form-container h3 {
+	font-size: 20px;
+	font-weight: 500;
+	position: relative;
+	padding-bottom: 5px;
+}
+
+.form-container h3::before {
+	content: "";
+	position: absolute;
+	height: 3px;
+	width: 50px;
+	background: linear-gradient(90deg, #3F3FD4, transparent, #3F3FD4);
+	left: 0;
+	bottom: 0;
+}
+
+
+
+
+.user-details {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 20px 0 12px 0;
+}
+
+.input-box {
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.input-box .details {
+	display: block;
+	padding-bottom: 5px;
+}
+
+.input-box input, textarea {
+	height: 40px;
+	width: 100%;
+	outline: none;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	padding-left: 20px;
+	font-size: 14px;
+}
+
+.input-box input:focus,
+.input-box input:valid {
+	border-color: #3F3FD4;
+	border-bottom-width: 2px;
+	transition: all .3s ease;
+} 
+
+.input-box textarea:focus {
+	border-color: #3F3FD4;
+	border-bottom-width: 2px;
+	transition: all .3s ease;
+} 
+
+
+#name-email {
+	width: calc(100% / 2 - 20px);
+}
+
+textarea {
+	width: 100%;
+	height: 100px;
+	border: 1px solid #ccc;
+}
+
+.submit {
+	width: 25%;
+	margin: auto;
+}
+
+.user-details button  {
+	height: 50px;
+	width: 100%;
+	background: white;
+	outline: none;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.submit button:hover {
+	border-color: #3F3FD4;
+	border-bottom-width: 2px;
+	cursor: pointer;
+}
+
+.submit button:active {
+	color: white;
+	cursor: pointer;
+	background-color: #3F3FD4;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+.contact {
+	padding: 30px 15px;
+}
+
+.contact h3, p {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.contact p {
+	padding-top: 5px;
+	padding-bottom: 10px;
+	font-weight: 400;
+	font-size: 12px;
+}
+
+
+
+
+.row-form {
+	height: 60vh;
+	padding: 10px;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(130deg, transparent, #3F3FD4);
+}
+
+.form-container {
+	width: 100%;
+	max-width: 800px;
+	padding: 25px 30px;
+	border-radius: 10px;
+}
+
+
+.form-details {
+}

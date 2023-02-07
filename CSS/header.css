@@ -1,0 +1,152 @@
+html {scroll-behavior:smooth}
+
+* {
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	padding: 0 35px;
+	background-color: #3F3FD4;
+	border-bottom: 1px solid white; 	/*rgb(236, 241, 250)*/
+	position: absolute;
+	width: 100vw;
+}
+
+
+/*
+.fixed-header {
+	background-color: rgb(236, 241, 250);
+	animation: fixHeader 1s ease;
+	position: fixed;
+	z-index: 11;
+}
+*/
+
+.container {
+	max-width: 1140px;
+	margin: auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.logo a {
+	text-decoration: none;
+	color: white;
+	font-size: 40px;
+	font-family: 'Eczar', 'Lobster', cursive, sans-serif;
+	font-weight: 600;
+	cursor: default;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+	height: 75px;
+	margin: auto;
+}
+
+.navbar-links ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.navbar-links li {
+	list-style: none;
+}
+
+.navbar-links li a {
+	text-decoration: none;
+	color: white;
+	position: relative;
+	margin: 0 18px 0 18px;
+	display: block;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-links li a::before {
+	display: none;
+	content: "";
+	position: absolute;
+	height: 3px;
+	width: 100%;
+	background: white;
+	left: 0;
+	right: 0;
+	bottom: -150%;
+	transition: all .5s ease;
+	cursor: pointer;
+}
+
+.navbar-links ul li a:hover::before {
+	display: block;
+	width: 100%;
+	left: 0px;
+	transition: all .5s ease;
+}
+
+.navbar-links li a:hover {
+	display: block;
+}
+
+.hamburger {
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 20px;
+}
+
+.hamburger .bar {
+	height: 3px;
+	width: 100%;
+	background-color: white;
+	border-radius: 10px;
+}
+
+a .bar:hover {
+	background-color: rgb(236, 0, 250);
+}
+
+@media (max-width: 775px) {
+	.hamburger {
+		display: flex;
+	}
+
+	.navbar-links {
+		display: none;
+	}
+
+	header {
+		background-color: rgb(236, 241, 250);
+		border-color: #191970;
+	}
+
+	header .logo a {
+		color: #01143e;
+	}
+
+	.hamburger .bar {
+		background-color: #01143e;
+	}
+}
+
+
+
+
+
+
+
+

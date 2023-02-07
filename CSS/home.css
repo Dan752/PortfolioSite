@@ -1,0 +1,97 @@
+
+.background {
+	background-color: #3F3FD4;
+	padding: 15px;
+	margin: 0;
+}
+
+.group {
+	background-image: url("../images/responsive-design.png");
+	background-repeat: no-repeat;
+	background-size: 50%;
+	background-position: right;
+}
+
+.home {
+	display: flex;
+	min-height: 100vh;
+	align-items: center;
+	color: white;
+}
+
+.home-container {
+	border-left: 3px solid white;
+	padding-left: 40px;
+}
+
+
+.home h1, h3, h6 {
+	margin: 0;
+	padding: 0 0 25px 0;
+}
+
+.home h6 {
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.home h1 {
+	font-size: 70px;
+}
+
+.home h3 {
+	font-weight: normal;
+}
+
+.home button {
+	padding: 8px 20px;
+	border: 1px solid white;
+	border-style: none;
+	border-radius: 10px;
+	background-color: white;
+	cursor: pointer;
+}
+
+.home button:active {
+	background-color: #3F3FD4;
+	border: 1px solid white;
+	border-radius: 10px;
+	color: white;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+
+
+
+@media (max-width: 1000px) {
+	.home h1 {
+		font-size: 55px;
+	}
+
+	.home h3 {
+		font-size: 16px;
+	}
+
+	.home h6 {
+		font-size: 12xp;
+	}
+
+
+}
+
+@media (max-width: 700px) {
+	.home h1 {
+		font-size: 35px;
+	}
+
+	.home h3 {
+		font-size: 12px;
+	}
+
+	.home h6 {
+		font-size: 8xp;
+	}
+
+
+}

@@ -1,0 +1,59 @@
+.projects {
+	padding: 60px 15px;
+}
+
+.projects h1 {
+	font-family: 'Eczar', 'Lobster', cursive, sans-serif;
+	font-size: 2em;
+	text-transform: uppercase;
+}
+
+.img-gallery {
+	max-width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.inner {
+	flex: 0 0 33.33%;
+	padding: 10px;
+	position: relative;
+}
+
+.inner img {
+	width: 100%;
+	display: block;
+	border-radius: 10px;
+}
+
+.inner div {
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 1.5em;
+}
+
+@media (max-width: 750px) {
+	.inner {
+		flex-basis: 50%;
+	}
+}
+
+
+
+/* Modal */
+
+.inner:hover div {
+	cursor: pointer;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+.inner:hover img{
+	transition: .6s ease;
+	opacity: .2;
+}

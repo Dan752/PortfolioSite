@@ -1,0 +1,44 @@
+.footer {
+	background-color: #3F3FD4;
+
+}
+
+.footer .logo {
+	margin: auto;
+	padding-top: 10px;
+	position: relative;
+}
+
+.footer .social-media {
+	margin: auto;
+	padding: 0;
+}
+
+.footer .social-media ul {
+	padding: 0;
+}
+
+
+footer .logo a::before {
+	content: "";
+	background-color: white;
+	height: 3px;
+	width: 40%;
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+}
+
+
+
+.footer h5 {
+	color: white;
+	margin: auto;
+	padding: 8px;
+}
+
+.line {
+	border-top: 1px solid white;
+}
